@@ -2,8 +2,8 @@
 public class Cheers {
         public static void main(String[] args) {
 	    // Replace this comment with your code
-            int numTimes = Integer.parseInt(args[0]);
             String s = (args[1]).toUpperCase();
+            int numTimes = Integer.parseInt(args[0]);
             //String s0out = " ";
             String letters = "AEFHILMNORSX";
             for(int i = 0 ; i < s.length(); i ++){
