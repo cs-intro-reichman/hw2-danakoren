@@ -11,16 +11,15 @@ public class Collatz {
 			for (int seed = 1 ; seed <= N ; seed ++){
 			int sum = 0;
 			int newSeed = seed;
-			System.out.print(newSeed + " ");
-				while (newSeed != 1){
+			do{
+				System.out.print(newSeed + " ");
 				if (newSeed % 2 == 0){
 					newSeed /= 2;
 				} else {
 					newSeed = (newSeed * 3) + 1;
 				}
 				sum++;
-				System.out.print(newSeed + "  ");
-			}
+			}while(newSeed!=1);
 			System.out.println( "(" + (sum + 1) + ")" );
 			
 		}
